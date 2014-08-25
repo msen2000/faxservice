@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>Scheduler Job failure notification</EmailSubject>
+	<EmailBody>
+		<![CDATA[
+		<html>
+			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+				<title>Scheduler Job failure notification</title>
+			</head>
+			<body>
+				Dear All,<br>
+				<p>This is to notify that the job {1} has failed after {2} tries.
+				Please do check the logs for more details.
+				</p> 
+				<p>{3}</p>
+				<p>&nbsp;</p>
+				<p>
+					Thanks,<br>Delta Dental
+				</p>
+			</body>
+		</html>
+		]]>
+
+	</EmailBody>
+</EmailServiceRequest>

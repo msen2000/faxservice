@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>
+ DDC PFC Error Notification - {1}
+	</EmailSubject>
+	<EmailBody>
+		Dear Provider, 
+		The Fee Calculation process, for provider ID - {1},submitted on {2}, encountered an error.  
+		The error message is : 
+
+	</EmailBody>
+</EmailServiceRequest>

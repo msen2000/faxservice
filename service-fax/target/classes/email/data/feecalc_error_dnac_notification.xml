@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>
+ DDC PFC Error Notification Email
+	</EmailSubject>
+	<EmailBody>
+<![CDATA[
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+    <title>feecalc_error_dnac_notification</title>
+  </head>
+  <body><p>
+       The system has encountered a problem.  
+    </p><p>
+                  The Fee Filing has been saved and will be processed once the
+                  system resolves the problem.
+            </p><p>
+                  The Transaction# of this transaction is {3} 
+            </p><p>
+      If you need to contact Business, please send an email to: 
+    </p><p><a href="mailto:{5}">Dentist Network Administration and Contracting</a>
+    </p><p>
+      &nbsp;
+    </p><p>
+                  The error message is : <p>{6}.</p>
+            </p><p>
+                  &nbsp;
+            </p><p>
+    &nbsp;
+    </p></body>
+</html>
+        ]]>
+
+	</EmailBody>
+</EmailServiceRequest>

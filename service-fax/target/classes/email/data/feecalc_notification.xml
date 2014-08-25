@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>
+ DDC PFC Notification Email - {1}
+	</EmailSubject>
+	<EmailBody>
+		Dear Provider, 
+		The Fee Calculation proceeded succesfully for provider ID - {1} 
+		submitted on {2}.
+		You can view the Report to verify the Fees and get 
+		back to us if there are any discrepencies. - [DELTA]
+	</EmailBody>
+</EmailServiceRequest>

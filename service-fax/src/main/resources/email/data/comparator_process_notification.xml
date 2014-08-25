@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>Comparison process notification email
+	</EmailSubject>
+	<EmailBody>
+	<![CDATA[
+		<html>
+			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+				<title>Comparison process</title>
+			</head>
+			<body>
+				Dear Customer,<br>
+					<p>Due to large file sizes, the system will take about 30 minutes to complete
+					your comparison. Please check back in 30 minutes.</p>
+					<p>An email will be sent after the comparison is done.</p>
+					<p>{1}</p>
+					<p>{2}</p>
+					<p>
+						If you have any questions, please e-mail: <a href="mailto:{3}">Your Billing Representative</a>
+					</p>
+					<p>
+	    			&nbsp;
+					</p>
+					<p>
+						Thanks,<br>Delta Dental
+					</p>					
+			</body>
+		</html>
+		]]>
+	</EmailBody>
+</EmailServiceRequest>

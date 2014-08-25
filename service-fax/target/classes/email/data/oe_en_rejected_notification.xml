@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>Open Enrollment needs updates</EmailSubject>
+	<EmailBody>
+		<![CDATA[
+		<html>
+			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+				<title>Open Enrollment needs updates</title>
+			</head>
+			<body>
+				<p>
+					Thank you for your request.  Your recent open enrollment transaction was not approved.</br>  
+					Please contact your benefits administrator
+				</p>
+				<p>
+					Thank you,</br>
+					Delta Dental
+				</p>
+			</body>
+		</html>
+		]]>		
+	</EmailBody>
+</EmailServiceRequest>

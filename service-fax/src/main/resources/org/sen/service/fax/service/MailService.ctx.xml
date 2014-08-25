@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+	<!--
+		- Spring context for mail service. Requires the following properties
+		to be predefined: - - 1. email.smtp.host e.g., smtp.delta.org - -
+		Delta Dental - - @author Narendran Chandrasekaran -
+	-->
+<beans>
+	<bean id="emailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${email.smtp.host}" />
+	</bean>
+	<bean id="emailService" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces">
+			<value>org.delta.crossplane.mail.service.EmailService</value>
+		</property>
+		<property name="target">
+			<bean class="org.delta.crossplane.mail.service.impl.EmailServiceImpl">
+				<property name="emailSender" ref="emailSender" />
+				<property name="testing">
+					<value>${email.istesting}</value>
+				</property>
+				<property name="testToEmail">
+					<value>${email.testtoemail}</value>
+				</property>
+			</bean>
+		</property>
+	</bean>
+	
+	<bean id="faxService" class="org.springframework.aop.framework.ProxyFactoryBean">
+		<property name="proxyInterfaces">
+			<value>org.delta.crossplane.mail.service.FaxService</value>
+		</property>
+		<property name="target">
+			<bean class="org.delta.crossplane.mail.service.impl.FaxServiceImpl">
+				
+				<property name="testing">
+					<value>${fax.istesting}</value>
+				</property>
+				<property name="testToFax">
+					<value>${fax.testtofax}</value>
+				</property>
+				<property name="faxServerUrl">
+					<value>${fax.faxServerUrl}</value>
+				</property>
+				<property name="userId">
+					<value>${fax.userId}</value>
+				</property>
+				<property name="ebduserId">
+					<value>${fax.ebduserId}</value>
+				</property>
+				
+			</bean>
+		</property>
+	</bean>
+</beans>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>
+		Open Enrollment notification email - {1}
+	</EmailSubject>
+	<EmailBody>
+		Hi, The open enrollment for the contract id - {2} has been {1}.
+		Please contact BA for more information. {3}
+	</EmailBody>
+</EmailServiceRequest>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>
+	Delta Dental Fee Update Notification
+	</EmailSubject>
+	<EmailBody>
+		<![CDATA[
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+    <title>feecalc_process_notification</title>
+  </head>
+  <body><p>
+      The system has received and processed your proposed fees submitted on {2}.  
+    </p><p>
+                  The transaction number for future reference is on  {3}.
+            </p><p>
+      You may view or download your current contracted Premier fees online at  <a href="http://{6}">{6}</a>.  
+    </p><p>
+     If you have any questions regarding this matter, please send an e-mail to : 
+    </p><p><a href="mailto:{5}">Dentist Network Administration and Contracting</a>
+    </p><p>
+    &nbsp;
+    </p></body>
+</html>
+
+        ]]>
+	</EmailBody>
+</EmailServiceRequest>

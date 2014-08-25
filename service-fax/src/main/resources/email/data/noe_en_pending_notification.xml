@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>Change Submitted</EmailSubject>
+	<EmailBody>
+		<![CDATA[
+		<html>
+			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+				<title>Change Submitted</title>
+			</head>
+			<body>
+				<p>
+					Thank you for your request.  Your update is currently pending approval by your benefits administrator.</br>  
+					You will receive a message when your request is processed.
+				</p>
+				<p>
+					Thank you,</br>
+					Delta Dental
+				</p>
+			</body>
+		</html>
+		]]>		
+	</EmailBody>
+</EmailServiceRequest>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>Ready to Run Delta Bump and Compare</EmailSubject>
+	<EmailBody>
+	<![CDATA[
+		<html>
+			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+				<title>Schema setup and activated successfully</title>
+			</head>
+			<body>
+				Dear Customer,<br>				
+				<p>Your are ready to use Delta Dental Online Billing Bump and Compare feature.</p>
+				
+				<p>
+				Uploaded sample file name : {1} <br>
+				Schema name : {2} 
+				</p>
+				<p>{3}</p>
+				<p>&nbsp;</p>
+				<p>
+					If you have any questions, please e-mail: <a href="mailto:{4}">Your Billing Representative</a>
+    			</p>
+				<p>
+					Thanks,<br>Delta Dental
+				</p>
+			</body>
+		</html>
+		]]>
+	</EmailBody>
+</EmailServiceRequest>

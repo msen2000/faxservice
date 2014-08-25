@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>
+	Delta Dental Fee Update Notification
+	</EmailSubject>
+	<EmailBody>
+		<![CDATA[
+			<html>
+			  <head>
+				<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+				<title>feecalc_reject_notification</title>
+			  </head>
+			  <body><p>
+				   &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+				</p><p>
+					Delta Dental has received your proposed fee submission.
+				</p><p>
+					However our records indicate that it has been less than 12 months from your previously 
+					contracted fees for at least one of the practice locations or specialty selected. 
+					Therefore, we have not processed this request. 
+				</p><p>
+				  You may view or download the contracted Premier fees that were processed online at <a href="{6}">http://{6}</a>.  
+				</p><p>
+					 If you have any questions regarding this matter, please send an e-mail to : 
+				</p><p><a href="mailto:{5}">Dentist Network Administration and Contracting</a>
+				&nbsp;
+				</p></body>
+			</html>
+        ]]>
+	</EmailBody>
+</EmailServiceRequest>

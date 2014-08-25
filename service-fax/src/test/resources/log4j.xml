@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<!-- set debug="true" to see detail info about log4j configuration -->
+<log4j:configuration xmlns:log4j="http://jakarta.apache.org/log4j/" debug="false">
+        
+  <appender name="R" class="org.apache.log4j.RollingFileAppender">
+     <param name="MaxFileSize" value="10MB"/> 
+     <param name="MaxBackupIndex" value="10"/>
+     <param name="File" value="test.log"/> 
+     <layout class="org.apache.log4j.PatternLayout">
+     	<param name="ConversionPattern" value="%d [%t] %-5p %c - %m%n"/> 
+     </layout>
+  </appender>
+  
+    <appender name="HtmlReportAppender"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="File" value="Performance.html" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="CsvReportAppender"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="File" value="Performance.csv" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern" value="%m%n" />
+		</layout>
+	</appender>
+
+	<appender name="TextReportAppender"
+		class="org.apache.log4j.DailyRollingFileAppender">
+		<param name="DatePattern" value="'.'yyyy-MM-dd" />
+		<param name="File" value="Performance.log" />
+		<layout class="org.apache.log4j.PatternLayout">
+			<param name="ConversionPattern"
+				value="%d [%t] %-5p %c - %m%n" />
+		</layout>
+	</appender>
+  
+  <logger name="org.delta">
+	<level value="DEBUG"/>
+  </logger>
+  <logger name="com.ibatis">
+	<level value="DEBUG"/>
+  </logger>
+  
+    <logger name="PerformanceMonitorHtmlReport">
+		<level value="DEBUG" />
+		<appender-ref ref="HtmlReportAppender" />
+	</logger>
+
+	<logger name="PerformanceMonitorTextReport">
+		<level value="DEBUG" />
+		<appender-ref ref="TextReportAppender" />
+	</logger>
+
+	<logger name="PerformanceMonitorCsvReport">
+		<level value="DEBUG" />
+		<appender-ref ref="CsvReportAppender" />
+	</logger>
+
+  <root>
+     <priority value ="ERROR" />
+	<appender-ref ref="R"/>
+  </root>
+
+</log4j:configuration>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>
+ DDC PFC Notification Email - {1}
+	</EmailSubject>
+	<EmailBody>
+		Dear Provider,
+		Congratulations!
+		The System has received and processed your Fee Filing.
+		You can see your Delta Accepted Allowances on your fee filing report.
+		The Transaction# of this transaction is {3}
+		If you have any questions please send an email to:
+	<!--	<a href="{2}">Dental Networking Administration and Contracting</a> -->
+	</EmailBody>
+</EmailServiceRequest>

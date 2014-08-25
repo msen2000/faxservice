@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN" "http://www.springframework.org/dtd/spring-beans.dtd">
+
+	<!--
+		- Spring context for mail service. Requires the following properties
+		to be predefined: - - 1. email.smtp.host e.g., smtp.delta.org - -
+		Delta Dental - - @author Narendran Chandrasekaran -
+	-->
+<beans>
+
+	<bean id="propertyConfigurer"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="locations">
+			<list>
+				<value>classpath:/application.properties</value>
+				<value>classpath:/performance.properties</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- bean id="emailSender" class="org.springframework.mail.javamail.JavaMailSenderImpl">
+		<property name="host" value="${email.smtp.host}" />
+	</bean>
+	
+			<bean id="emailService" class="org.delta.crossplane.mail.service.impl.EmailServiceImpl">
+				<property name="emailSender" ref="emailSender" />
+				<property name="testing">
+					<value>${email.istesting}</value>
+				</property>
+				<property name="testToEmail">
+					<value>${email.testtoemail}</value>
+				</property>
+			</bean-->
+			
+			<import resource="classpath:/org/delta/crossplane/mail/service/MailService.ctx.xml" />
+	
+ 	<!-- import resource="classpath:/org/delta/crossplane/mail/service/MailService.ctx.xml" /-->
+</beans>

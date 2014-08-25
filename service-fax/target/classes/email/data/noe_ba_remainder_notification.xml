@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>BA Approval Remainder Notification</EmailSubject>
+	<EmailBody>
+		The period to approve your enrollee transactions will expire in
+		{1}-days.
+	</EmailBody>
+</EmailServiceRequest>

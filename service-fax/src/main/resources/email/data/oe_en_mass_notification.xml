@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>Open Enrollment notification</EmailSubject>
+	<EmailBody>
+		<![CDATA[
+		<html>
+			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+				<title>Open Enrollment notification</title>
+			</head>
+			<body>
+				<p>
+					Your open enrollment will begin on {1}. Please log on to 'www.deltadentalins.com' </br>
+					to do your open enrollment.  
+				</p>
+				<p>
+					Thank you,</br>
+					Delta Dental
+				</p>
+			</body>
+		</html>
+		]]> 
+	</EmailBody>
+</EmailServiceRequest>

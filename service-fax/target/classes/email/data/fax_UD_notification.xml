@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailServiceRequest>
+	<EmailFrom>{0}</EmailFrom>
+	<EmailSubject>Eligibility Notification </EmailSubject>
+	<EmailBody>
+		<![CDATA[
+		<html>
+			<head>
+				<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"></meta>
+				<title>Eligibility Notification </title>
+			</head>
+			<body>
+			</p>
+q			<p>
+			<b>#EPHI <br>
+			CAN WE HELP?<br>
+			Visit our web site<br>
+			www.deltadentalins.com<br><br>
+			</p>
+
+			<p>
+			Call Customer Service: 866-616-1475 <br>
+			TDD/TTY: 888-373-3582 <br>
+			Mon to Fri 7:15 a.m. to 7:30 p.m. Eastern Time <br><br><br>
+			</b>
+				<p>
+					Disclaimer:  <br>
+				</p>
+				<p>
+					Important Information<br>
+				</p>
+				<p>
+					This statement is based on Delta Dental records as of the date of this email, and this information may not be accurate or current on the date the services are actually performed. It is not an authorization, a guarantee of eligibility, benefits, or payment. Thank you for choosing Delta Dental for your dental benefits coverage.<br>
+				</p><br>
+<!-- 				<p> -->
+<!-- 					The information contained in this email message and any attachments is confidential and intended only for the addressee(s). If you are not an addressee, you may not copy or disclose the information, or act upon it, and you should delete it entirely from your email system. Please notify the sender that you received this email in error.<br> -->
+
+<!-- 				</p> -->
+			</body>
+		</html>
+		]]>
+	</EmailBody>
+</EmailServiceRequest>
